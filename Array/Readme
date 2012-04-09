@@ -2,7 +2,11 @@ ArrayCalss.cs
 	
 	How to pass array as arguments?
 	
+ArrayQueue.cd
 
+	What's the different between shallow copy and deep copy? If we 
+	invoke the function 'Clone', Please note that it really had done
+	a deep copy when the value in array is value type.
 
 Resume
 	
