@@ -37,8 +37,11 @@ namespace Program
 	{
 		public static void Main()
 		{
-			// Chapter 1 ArrayClass
+			#region Array
+			// ArrayClass
 			ArrayClass.ArrayClass.RunArrayClass();
+			#endregion // Array
+			
 		}
 	}
 }

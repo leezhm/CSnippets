@@ -41,10 +41,6 @@ namespace ArrayClass
 	{
 		private static void PrintArray(string [] arr)
 		{
-	//		Parallel.For(0, arr.Length, i =>
-	//		{
-	//			Console.Write(arr[i] + "{0}", i < arr.Length - 1 ? " " : "\n");
-	//		});
 			for(int i = 0; i < arr.Length; ++ i)
 			{
 				Console.Write(arr[i] + "{0}", i < arr.Length - 1 ? " -> " : "\n");
