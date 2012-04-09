@@ -40,7 +40,12 @@ namespace Program
 			#region Array
 			// ArrayClass
 			ArrayClass.ArrayClass.RunArrayClass();
+			
+			// ArrayQueue
+			ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
+			aq.RunArrayQueue();
 			#endregion // Array
+		
 			
 		}
 	}

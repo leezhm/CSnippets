@@ -35,8 +35,12 @@
   <ItemGroup>
     <Compile Include="Array\ArrayClass.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="Array\ArrayQueue.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
   </ItemGroup>
 </Project>
