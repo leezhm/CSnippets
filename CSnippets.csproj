@@ -33,6 +33,10 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="ArrayClass.cs" />
+    <Compile Include="Array\ArrayClass.cs" />
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Array\" />
   </ItemGroup>
 </Project>
