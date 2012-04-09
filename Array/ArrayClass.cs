@@ -2,7 +2,7 @@
 // ArrayClass.cs
 //  
 // Author:
-//       Leezhm <leezhm(at)126.com>
+//       leezhm <leezhm(at)126.com>
 // 
 // Copyright (c) 2012 leezhm(at)126.com
 // 
@@ -10,7 +10,7 @@
 // 	2012/4/9
 // 
 // Modified:
-// 	Leezhm <2012/4/9> 
+// 	leezhm <2012/4/9> 
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -31,3 +31,68 @@
 // THE SOFTWARE.
 // 
 
+using System;
+
+using System.Threading.Tasks;
+
+namespace ArrayClass
+{
+	class ArrayClass
+	{
+		private static void PrintArray(string [] arr)
+		{
+	//		Parallel.For(0, arr.Length, i =>
+	//		{
+	//			Console.Write(arr[i] + "{0}", i < arr.Length - 1 ? " " : "\n");
+	//		});
+			for(int i = 0; i < arr.Length; ++ i)
+			{
+				Console.Write(arr[i] + "{0}", i < arr.Length - 1 ? " -> " : "\n");
+			}
+		}
+		
+		private static void ChangeArray(string [] arr)
+		{
+			// Reserve array
+			Array.Reverse(arr);
+			
+			Console.Write("Print Array in ChangeArray, after reversing current Array ... ");
+			PrintArray(arr);
+		}
+		
+		private static void ChangeArrayElements(string [] arr)
+		{
+			// Change array element
+			arr[0] = "Sun";
+			arr[1] = "Mon";
+			arr[2] = "Tues";
+			
+			Console.Write("Print Array in ChangeArrayElement ... ");
+			PrintArray(arr);
+		}
+		
+		public static void RunArrayClass()
+		{
+			// Declare and initialize an array
+			string [] weekDays = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+							      "Friday", "Saturday"};
+			
+			
+			// Print the array as an argument to PrintArray
+			PrintArray(weekDays);
+			
+			// ChangeArray tries to change the array by assigning something new
+	        // to the array in the method.
+			ChangeArray(weekDays);
+			
+			// Print array again after invoking function ChangeArray
+			PrintArray(weekDays);
+			
+			// ChangeArrayElements assigns new values to individual array elements.
+			ChangeArrayElements(weekDays);
+			
+			// Print array again after invoking function ChangeArrayElement
+			PrintArray(weekDays);
+		}
+	}
+}

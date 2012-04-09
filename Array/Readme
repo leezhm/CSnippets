@@ -1,0 +1,25 @@
+ArrayCalss.cs	 
+
+	
+	How to pass array as arguments?
+
+Resume
+	
+> An array can be Single-Dimensional, Multidimensional or Jagged.
+
+> The default value of numeric array elements are set to zero, and 
+  reference elements are set to null
+			  	  
+> A jagged array is an array of arrays, and therefore its elements 
+  are reference types and are initialized to null.
+						    	
+> Arrays are zero indexed: an array with n elements is indexed from 0 to n-1.
+
+> Array elements can be of any type, including an array type.
+
+> Array types are reference types derived from the abstract base type Array. 
+  Since this type implements IEnumerable and IEnumerable(Of T), you can use 
+  foreach iteration on all arrays in C#. 
+											    	  
+> More information, Please access this page as bellow,
+  http://msdn.microsoft.com/zh-cn/library/9b9dty7d.aspx
