@@ -46,7 +46,9 @@ namespace Program
 			aq.RunArrayQueue();
 			#endregion // Array
 		
-			
+			#region Threads
+			SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
+			#endregion // Threads
 		}
 	}
 }

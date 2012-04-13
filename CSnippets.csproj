@@ -35,9 +35,11 @@
     <Compile Include="Array\ArrayClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
+    <Compile Include="Threads\SimpleThreadPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
+    <Folder Include="Threads\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">
