@@ -37,7 +37,7 @@ using System.Collections.Generic;
 
 namespace ArrayQueue
 {
-	public class ArrayQueue
+    public class ArrayQueue
 	{
 		private Queue<string[]> arrayQueue = new Queue<string[]>();
 		
