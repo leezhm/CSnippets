@@ -36,6 +36,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
+    <Compile Include="Threads\AutoResetEventDemo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
