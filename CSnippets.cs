@@ -31,22 +31,32 @@
 // THE SOFTWARE.
 // 
 
-namespace Program
+using System;
+
+namespace CSnippets
 {
-	public class Program
+	public class CSnippets
 	{
 		public static void Main()
 		{
 			#region Array
 			// ArrayClass
 			ArrayClass.ArrayClass.RunArrayClass();
+			Console.WriteLine();
 			
 			// ArrayQueue
 			ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
 			aq.RunArrayQueue();
+			Console.WriteLine();
 			#endregion // Array
 		
+			#region Threads
+			SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
+			Console.WriteLine();
 			
+			
+			AutoResetEventDemo.AutoResetEventDemo.RunAutoResetEventDemo();
+			#endregion // Threads
 		}
 	}
 }
