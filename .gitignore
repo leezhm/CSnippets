@@ -4,6 +4,10 @@ Thumbs.db
 #Ignore files build by MonoDevelop
 *.userprefs
 
+#Ignore file 
+*.pidb
+*.DS_Store
+
 #Ignore files build by Visual Studio
 *.obj
 *.exe
