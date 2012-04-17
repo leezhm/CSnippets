@@ -91,13 +91,13 @@ namespace AutoResetEventDemo
 		private static void ThreadProc()
 		{
 			string name = Thread.CurrentThread.Name;
-			
+			    
 			Console.WriteLine("{0} waits on AutoResetEvent #1 ... ", name);
 			event1.WaitOne();
 			Console.WriteLine("{0} is released on AutoResetEvent #1 ... ", name);
 			
 			Console.WriteLine("{0} waits on AutoResetEvent #2 ... ", name);
-			event2.WaitOne();
+			event2.WaitOne();    
 			Console.WriteLine("{0} is released on AutoResetEvent #2 ... ", name);
 			
 			Console.WriteLine("{0} ends ... ", name);

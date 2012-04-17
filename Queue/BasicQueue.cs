@@ -1,5 +1,5 @@
-﻿// 
-// Program.cs
+// 
+// BasicQueue.cs
 //  
 // Author:
 //       leezhm <leezhm(at)126.com>
@@ -7,10 +7,10 @@
 // Copyright (c) 2012 leezhm(at)126.com
 // 
 // Created:
-// 		 2012/4/9
+//       leezhm <2012/4/16>
 // 
 // Modified:
-// 	     leezhm <2012/4/9> 
+//       leezhm <2012/4/16> 
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -33,34 +33,72 @@
 
 using System;
 
-namespace CSnippets
+using System.Collections.Generic;
+
+namespace BasicQueue
 {
-	public class CSnippets
-	{
-		public static void Main()
-		{
-			#region Array
-			// ArrayClass
-			ArrayClass.ArrayClass.RunArrayClass();
-			Console.WriteLine();
-			
-			// ArrayQueue
-			ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
-			aq.RunArrayQueue();
-			Console.WriteLine();
-			#endregion // Array
+	public class BasicQueue
+	{	
+		/// <summary>
+		/// The max count.
+		/// </summary>
+		private const int maxCount = 100;
 		
-			#region Threads
-			SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
+		/// <summary>
+		/// The show queue.
+		/// </summary>
+		private Queue<int> showQueue = new Queue<int>();
+		
+		public static void RunBasicQueue()
+		{
+			BasicQueue run = new BasicQueue();
+			
+			run.Init();
+			run.ShowQueue();
+			
+			run.DoSomething();
+		}
+		
+		private void Init()
+		{
+			Random rd = new Random();
+			for(int i = 0; i < maxCount; ++ i)
+			{
+				showQueue.Enqueue(rd.Next(0, 1000));
+			}
+		}
+		
+		private void ShowQueue()
+		{
+			foreach(int item in showQueue)
+			{
+				Console.Write(item + " ");
+			}
 			Console.WriteLine();
+		}
+		
+		private void DoSomething()
+		{
+			int[] sortArray = new int[maxCount];
 			
+			int i = 0;
+			foreach(int item in showQueue)
+			{
+				sortArray[i] = item;
+				
+				++ i;
+			}
 			
-			AutoResetEventDemo.AutoResetEventDemo.RunAutoResetEventDemo();
-			#endregion // Threads
+			Array.Sort(sortArray);
 			
-			#region Queue
-			BasicQueue.BasicQueue.RunBasicQueue();
-			#endregion // Queue
+			Console.Write("After Sort -> ");
+			
+			foreach(int item in sortArray)
+			{
+				Console.Write(item + " ");
+			}
+			Console.WriteLine();
 		}
 	}
 }
+
