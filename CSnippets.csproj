@@ -33,10 +33,10 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="Array\ArrayClass.cs" />
-    <Compile Include="Program.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
+    <Compile Include="CSnippets.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
