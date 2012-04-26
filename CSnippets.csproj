@@ -34,9 +34,11 @@
   <ItemGroup>
     <Compile Include="Array\ArrayClass.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
+    <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
     <Compile Include="CSnippets.cs" />
+    <Compile Include="Queue\ShareQueueInThread.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
