@@ -32,14 +32,120 @@
 // 
 // 
 // 
-using System;
 
-namespace CSnippets
+using System;
+using System.IO; // for Directory
+
+using System.Collections.Generic; // for List
+
+namespace EnumerateDirectory
 {
 	public class EnumerateDirectory
 	{
-		public EnumerateDirectory ()
+		public EnumerateDirectory()
 		{
+		}		
+		
+		/// <summary>
+		/// Gets the files from the designated directory.
+		/// </summary>
+		/// <returns>
+		/// The files.
+		/// </returns>
+		/// <param name='path'>
+		/// Path.
+		/// </param>
+		public static string[] GetFiles(string path)
+		{
+			if (String.Empty == path)
+			{
+				Console.WriteLine("Path is Empty ...");
+				return null;
+			}
+			
+			try
+			{
+				var files = Directory.EnumerateFiles(path);
+				
+				List<string> listFiles = new List<string>(files);
+				
+				return listFiles.ToArray();
+			}
+			catch (PathTooLongException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			catch (UnauthorizedAccessException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			catch (DirectoryNotFoundException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			
+			return null;
+		}
+		
+		/// <summary>
+		/// Gets the directories.
+		/// </summary>
+		/// <returns>
+		/// The directories.
+		/// </returns>
+		/// <param name='path'>
+		/// Path.
+		/// </param>
+		public static string[] GetDirectories(string path)
+		{
+			if (String.Empty == path)
+			{
+				Console.WriteLine("Path is Empty ...");
+				return null;
+			}
+			
+			try
+			{
+				var dirs = Directory.EnumerateDirectories(path, "*", SearchOption.AllDirectories);
+				
+				List<string> listDirs = new List<string>(dirs);
+				
+				// Don't forget the current directory.
+				listDirs.Add(path);
+				
+				return listDirs.ToArray();
+			}
+			catch (UnauthorizedAccessException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			catch (DirectoryNotFoundException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			catch (PathTooLongException expt)
+			{
+				Console.WriteLine(expt.ToString());
+			}
+			
+			return null;
+		}
+				
+		public static void ShowCurrentDirectory()
+		{
+			//string path = Directory.GetCurrentDirectory();
+			string path = "/Users/Leezhm/Developments/Mono/CSnippets";
+			
+			string [] dirs = GetDirectories(path);
+			
+			foreach (string dir in dirs)
+			{
+				string [] files = GetFiles(dir);
+				foreach (string file in files)
+				{
+					Console.WriteLine(file);
+				}
+			}
 		}
 	}
 }
