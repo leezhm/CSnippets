@@ -1,4 +1,5 @@
-﻿// 
+﻿
+// 
 // Program.cs
 //  
 // Author:
@@ -60,6 +61,7 @@ namespace CSnippets
 			
 			#region Queue
 			BasicQueue.BasicQueue.RunBasicQueue();
+			ShareQueueInThread.ShareQueueInThread.RunShareQueueInThread();
 			#endregion // Queue
 		}
 	}
