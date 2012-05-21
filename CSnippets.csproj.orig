@@ -34,18 +34,24 @@
   <ItemGroup>
     <Compile Include="Array\ArrayClass.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
+    <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
     <Compile Include="CSnippets.cs" />
 <<<<<<< HEAD
+    <Compile Include="Queue\ShareQueueInThread.cs" />
 =======
     <Compile Include="Queue\BasicQueue.cs" />
->>>>>>> 902d516be104c01cdc0b0ea541743e997201bfa0
+    <Compile Include="Queue\ShareQueueInThread.cs" />
+    <Compile Include="Directory\EnumerateDirectory.cs" />
+>>>>>>> f1e6cf5c925397806dea42d7853027335a545bc8
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Array\" />
     <Folder Include="Threads\" />
     <Folder Include="Queue\" />
+    <Folder Include="Xml\" />
+    <Folder Include="Directory\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">

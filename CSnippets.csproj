@@ -34,7 +34,6 @@
   <ItemGroup>
     <Compile Include="Array\ArrayClass.cs" />
     <Compile Include="Array\ArrayQueue.cs" />
-    <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
     <Compile Include="CSnippets.cs" />
@@ -43,11 +42,8 @@
     <Compile Include="Directory\EnumerateDirectory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Array\" />
-    <Folder Include="Threads\" />
-    <Folder Include="Queue\" />
+    <Folder Include="Delegate\" />
     <Folder Include="Xml\" />
-    <Folder Include="Directory\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System">
