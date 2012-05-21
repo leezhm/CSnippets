@@ -2,9 +2,9 @@
 // ShareQueueInThread.cs
 //  
 // Author:
-//       leezhm <leezhm(at)126.com>
-// 
-// Copyright (c) 2012 leezhm(at)126.com
+//       Leezhm <leezhm@126.com>
+//             
+// Copyright (c) 2012 leezhm@126.com
 // 
 // Created:
 //       leezhm <2012/4/26>

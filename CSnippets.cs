@@ -63,6 +63,11 @@ namespace CSnippets
 			BasicQueue.BasicQueue.RunBasicQueue();
 			ShareQueueInThread.ShareQueueInThread.RunShareQueueInThread();
 			#endregion // Queue
+			
+			#region Directory
+			EnumerateDirectory.EnumerateDirectory.ShowCurrentDirectory();
+			#endregion // Directory
+
 		}
 	}
 }
