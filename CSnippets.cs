@@ -72,6 +72,11 @@ namespace CSnippets
             DataType.DataType.SizeofType();
             #endregion // DataType
 
+            #region Classes
+            Classes.ConstructorAndDestructor.TestIt();
+            #endregion // Classes
+
+
             Console.ReadKey();
         }
 	}
