@@ -134,7 +134,7 @@ namespace EnumerateDirectory
 		public static void ShowCurrentDirectory()
 		{
 			//string path = Directory.GetCurrentDirectory();
-			string path = "/Users/Leezhm/Developments/Mono/CSnippets";
+            string path = System.Environment.CurrentDirectory;
 			
 			string [] dirs = GetDirectories(path);
 			

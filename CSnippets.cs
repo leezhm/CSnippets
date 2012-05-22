@@ -40,34 +40,39 @@ namespace CSnippets
 	{
 		public static void Main()
 		{
-			#region Array
-			// ArrayClass
-			ArrayClass.ArrayClass.RunArrayClass();
-			Console.WriteLine();
+            //#region Array
+            //// ArrayClass
+            //ArrayClass.ArrayClass.RunArrayClass();
+            //Console.WriteLine();
 			
-			// ArrayQueue
-			ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
-			aq.RunArrayQueue();
-			Console.WriteLine();
-			#endregion // Array
+            //// ArrayQueue
+            //ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
+            //aq.RunArrayQueue();
+            //Console.WriteLine();
+            //#endregion // Array
 		
-			#region Threads
-			SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
-			Console.WriteLine();
+            //#region Threads
+            //SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
+            //Console.WriteLine();
 			
 			
-			AutoResetEventDemo.AutoResetEventDemo.RunAutoResetEventDemo();
-			#endregion // Threads
+            //AutoResetEventDemo.AutoResetEventDemo.RunAutoResetEventDemo();
+            //#endregion // Threads
 			
-			#region Queue
-			BasicQueue.BasicQueue.RunBasicQueue();
-			ShareQueueInThread.ShareQueueInThread.RunShareQueueInThread();
-			#endregion // Queue
+            //#region Queue
+            //BasicQueue.BasicQueue.RunBasicQueue();
+            //ShareQueueInThread.ShareQueueInThread.RunShareQueueInThread();
+            //#endregion // Queue
 			
-			#region Directory
-			EnumerateDirectory.EnumerateDirectory.ShowCurrentDirectory();
-			#endregion // Directory
+            //#region Directory
+            //EnumerateDirectory.EnumerateDirectory.ShowCurrentDirectory();
+            //#endregion // Directory
 
-		}
+            #region DataType
+            DataType.DataType.SizeofType();
+            #endregion // DataType
+
+            Console.ReadKey();
+        }
 	}
 }
