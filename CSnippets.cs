@@ -76,6 +76,9 @@ namespace CSnippets
             Classes.ConstructorAndDestructor.TestIt();
             #endregion // Classes
 
+            #region GC
+            GC.DisposeExample.TestDispose();
+            #endregion // GC
 
             Console.ReadKey();
         }

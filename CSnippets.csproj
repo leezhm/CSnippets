@@ -37,6 +37,7 @@
     <Compile Include="Array\ArrayQueue.cs" />
     <Compile Include="Classes\ConstructorAndDestructor.cs" />
     <Compile Include="DataType\DataType.cs" />
+    <Compile Include="GC\DisposeExample.cs" />
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
