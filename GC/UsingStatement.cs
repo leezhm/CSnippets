@@ -54,17 +54,17 @@ namespace CSnippets.GC
                 Console.WriteLine("Charset of Arial is {0}", charset);
             }
 
-            Font font2 = new Font("Arial", 10.0f);
-            using (font2) // not recommended
-            {
-                // use font2
-                byte charset2 = font2.GdiCharSet;
+            //Font ft2 = new Font("Arial", 10.0f);
+            //using (ft2) // not recommended
+            //{
+            //    // use font2
+            //    byte charset2 = ft2.GdiCharSet;
 
-                Console.WriteLine("Charset 2 of Arial is {0}", charset2);
-            }
-            // font2 is still in scope
-            // but the method call throws an exception
-            float f = font2.GetHeight(); 
+            //    Console.WriteLine("Charset 2 of Arial is {0}", charset2);
+            //}
+            //// font2 is still in scope
+            //// but the method call throws an exception
+            //float f = ft2.GetHeight(); 
         }
     }
 }

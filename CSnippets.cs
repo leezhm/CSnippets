@@ -79,6 +79,7 @@ namespace CSnippets
             #region GC
             GC.DisposeExample.TestDispose();
             GC.UsingStatement.TestUsingStatement();
+            GC.FinalizeExample.TestFinalizeExample();
             #endregion // GC
 
             Console.ReadKey();

@@ -37,12 +37,8 @@ namespace CSnippets.GC
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
-
     using System.IO;
 
-    /// <summary>
-    /// TODO: Update summary.
-    /// </summary>
     public class DisposeExample
     {
         public static void TestDispose()

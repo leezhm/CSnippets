@@ -18,7 +18,7 @@
     <DefineConstants>TRACE;DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
@@ -38,6 +38,7 @@
     <Compile Include="Classes\ConstructorAndDestructor.cs" />
     <Compile Include="DataType\DataType.cs" />
     <Compile Include="GC\DisposeExample.cs" />
+    <Compile Include="GC\FinalizeExample.cs" />
     <Compile Include="GC\UsingStatement.cs" />
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
