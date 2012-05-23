@@ -117,7 +117,7 @@ namespace CSnippets.GC
             {
                 if (disposing)
                 {
-                    // Release unmanage resource
+                    // Release unmanaged resource
 
                     if (null != resource)
                     {
@@ -126,7 +126,7 @@ namespace CSnippets.GC
                     }
                 }
 
-                // Release manage resource
+                // Release managed resource
 
                 // Indicate that the instance has been disposed.
                 resource = null;
