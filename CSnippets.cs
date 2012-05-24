@@ -68,19 +68,23 @@ namespace CSnippets
             //EnumerateDirectory.EnumerateDirectory.ShowCurrentDirectory();
             //#endregion // Directory
 
-            #region DataType
-            DataType.DataType.SizeofType();
-            #endregion // DataType
+            //#region DataType
+            //DataType.DataType.SizeofType();
+            //#endregion // DataType
 
-            #region Classes
-            Classes.ConstructorAndDestructor.TestIt();
-            #endregion // Classes
+            //#region Classes
+            //Classes.ConstructorAndDestructor.TestIt();
+            //#endregion // Classes
 
-            #region GC
-            GC.DisposeExample.TestDispose();
-            GC.UsingStatement.TestUsingStatement();
-            GC.FinalizeExample.TestFinalizeExample();
-            #endregion // GC
+            //#region GC
+            //GC.DisposeExample.TestDispose();
+            //GC.UsingStatement.TestUsingStatement();
+            //GC.FinalizeExample.TestFinalizeExample();
+            //#endregion // GC
+
+            #region Ref and Out
+            RefAndOut.ArgumentWithRefAndOut.TestArgumentWithRefAndOut();
+            #endregion // Ref and Out
 
             Console.ReadKey();
         }
