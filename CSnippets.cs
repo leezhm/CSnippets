@@ -82,9 +82,13 @@ namespace CSnippets
             //GC.FinalizeExample.TestFinalizeExample();
             //#endregion // GC
 
-            #region Ref and Out
-            RefAndOut.ArgumentWithRefAndOut.TestArgumentWithRefAndOut();
-            #endregion // Ref and Out
+            //#region Ref and Out
+            //RefAndOut.ArgumentWithRefAndOut.TestArgumentWithRefAndOut();
+            //#endregion // Ref and Out
+
+            #region Operator Overloading
+            OperatorOverload.OperatorExample.TestOperatorExample();
+            #endregion // Operator Overloading
 
             Console.ReadKey();
         }

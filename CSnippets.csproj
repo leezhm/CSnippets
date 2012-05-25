@@ -70,6 +70,7 @@
     <Compile Include="GC\DisposeExample.cs" />
     <Compile Include="GC\FinalizeExample.cs" />
     <Compile Include="GC\UsingStatement.cs" />
+    <Compile Include="OperatorOverload\OperatorExample.cs" />
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="RefAndOut\ArgumentWithRefAndOut.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
