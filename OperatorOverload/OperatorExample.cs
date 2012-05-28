@@ -84,6 +84,44 @@ namespace CSnippets.OperatorOverload
             return result;
         }
 
+        /// <summary>
+        /// unary operator
+        /// </summary>
+        /// <param name="operand"></param>
+        /// <returns></returns>
+        public static ThreeD operator -(ThreeD operand)
+        {
+            ThreeD result = new ThreeD();
+
+            result.xIndex = -operand.xIndex;
+            result.yIndex = -operand.yIndex;
+            result.zIndex = -operand.zIndex;
+
+            return result;
+        }
+
+        public static ThreeD operator ++(ThreeD operand)
+        {
+            ThreeD result = new ThreeD();
+
+            result.xIndex = operand.xIndex + 1;
+            result.yIndex = operand.yIndex + 1;
+            result.zIndex = operand.zIndex + 1;
+
+            return result;
+        }
+
+        public static ThreeD operator --(ThreeD operand)
+        {
+            ThreeD result = new ThreeD();
+
+            result.xIndex = operand.xIndex - 1;
+            result.yIndex = operand.yIndex - 1;
+            result.zIndex = operand.zIndex - 1;
+
+            return result;
+        }
+
         public override string ToString()
         {
             string str = String.Empty;
@@ -127,6 +165,15 @@ namespace CSnippets.OperatorOverload
 
             td3 -= td3;
             Console.WriteLine("Result of td3 -= td3 is {0}", td3.ToString());
+
+            td3 = td1++;
+            Console.WriteLine("Result of td3{0} = td1 ++ is {1}", td3.ToString(), td1.ToString());
+
+            td3 = ++td1;
+            Console.WriteLine("Result of td3{0} = ++ td1 is {1}", td3.ToString(), td1.ToString());
+
+            td3 = -td2;
+            Console.WriteLine("Result of td3{0} = - td2 is {1}", td3.ToString(), td2.ToString());
         }
     }
 }
