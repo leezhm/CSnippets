@@ -57,6 +57,12 @@ namespace CSnippets.IndexerAndProperty
         {
             get
             {
+                // Prevent the index is out of the boundary.
+                if (0 > index || 7 <= index)
+                {
+                    return Indexer[0];
+                }
+
                 return Indexer[index];
             }
         }
