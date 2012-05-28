@@ -73,6 +73,28 @@ namespace CSnippets.OperatorOverload
             return result;
         }
 
+        public static ThreeD operator +(ThreeD fstThreeD, int secndInt)
+        {
+            ThreeD result = new ThreeD();
+
+            result.xIndex = fstThreeD.xIndex + secndInt;
+            result.yIndex = fstThreeD.yIndex + secndInt;
+            result.zIndex = fstThreeD.zIndex + secndInt;
+
+            return result;
+        }
+
+        public static ThreeD operator +(int fstInt, ThreeD secdThreeD)
+        {
+            ThreeD result = new ThreeD();
+
+            result.xIndex = fstInt + secdThreeD.xIndex;
+            result.yIndex = fstInt + secdThreeD.yIndex;
+            result.zIndex = fstInt + secdThreeD.zIndex;
+
+            return result;
+        }
+
         public static ThreeD operator -(ThreeD fstThreeD, ThreeD secdThreeD)
         {
             ThreeD result = new ThreeD();
@@ -174,6 +196,12 @@ namespace CSnippets.OperatorOverload
 
             td3 = -td2;
             Console.WriteLine("Result of td3{0} = - td2 is {1}", td3.ToString(), td2.ToString());
+
+            td3 = td1 + 4;
+            Console.WriteLine("Result of td3 = td1 + 4 is {0}", td3.ToString());
+
+            td3 = 4 + td2;
+            Console.WriteLine("Result of td3 = 4 + td2 is {0}", td3.ToString());
         }
     }
 }
