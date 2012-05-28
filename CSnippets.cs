@@ -86,9 +86,13 @@ namespace CSnippets
             //RefAndOut.ArgumentWithRefAndOut.TestArgumentWithRefAndOut();
             //#endregion // Ref and Out
 
-            #region Operator Overloading
-            OperatorOverload.OperatorExample.TestOperatorExample();
-            #endregion // Operator Overloading
+            //#region Operator Overloading
+            //OperatorOverload.OperatorExample.TestOperatorExample();
+            //#endregion // Operator Overloading
+
+            #region Indexer and Property
+            IndexerAndProperty.IndexerExample.TestIndexerExample();
+            #endregion // Indexer and Property
 
             Console.ReadKey();
         }
