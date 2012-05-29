@@ -107,11 +107,11 @@ namespace CSnippets.GC
         public Derived(string name, List<object> tracking)
             : base(name, tracking)
         {
-            // Save the instance name as an ummanaged resource
+            // Save the instance name as an unmanaged resource
             umResource = Marshal.StringToCoTaskMemAuto(InstanceName);
         }
 
-        protected virtual void Dispose(bool disposing)
+        new protected virtual void Dispose(bool disposing)
         {
             if (!disposed)
             {

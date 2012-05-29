@@ -90,9 +90,13 @@ namespace CSnippets
             //OperatorOverload.OperatorExample.TestOperatorExample();
             //#endregion // Operator Overloading
 
-            #region Indexer and Property
-            IndexerAndProperty.IndexerExample.TestIndexerExample();
-            #endregion // Indexer and Property
+            //#region Indexer and Property
+            //IndexerAndProperty.IndexerExample.TestIndexerExample();
+            //#endregion // Indexer and Property
+
+            #region Interface
+            Interfacce.InterfaceExample.TestInterfaceExample();
+            #endregion // Interface
 
             Console.ReadKey();
         }

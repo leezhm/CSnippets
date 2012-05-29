@@ -71,6 +71,7 @@
     <Compile Include="GC\FinalizeExample.cs" />
     <Compile Include="GC\UsingStatement.cs" />
     <Compile Include="IndexerAndProperty\IndexerExample.cs" />
+    <Compile Include="Interfacce\InterfaceExample.cs" />
     <Compile Include="OperatorOverload\OperatorExample.cs" />
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="RefAndOut\ArgumentWithRefAndOut.cs" />
