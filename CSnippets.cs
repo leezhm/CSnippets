@@ -8,10 +8,10 @@
 // Copyright (c) 2012 leezhm(at)126.com
 // 
 // Created:
-// 		 2012/4/9
+// 		 leezhm <2012/4/9> 
 // 
 // Modified:
-// 	     leezhm <2012/4/9> 
+// 	     leezhm <2012/5/29> 
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -94,9 +94,13 @@ namespace CSnippets
             //IndexerAndProperty.IndexerExample.TestIndexerExample();
             //#endregion // Indexer and Property
 
-            #region Interface
-            Interfacce.InterfaceExample.TestInterfaceExample();
-            #endregion // Interface
+            //#region Interface
+            //Interfacce.InterfaceExample.TestInterfaceExample();
+            //#endregion // Interface
+
+            #region Exception
+            Exception.ExceptionExample.TestExceptionExample();
+            #endregion // Exception
 
             Console.ReadKey();
         }
