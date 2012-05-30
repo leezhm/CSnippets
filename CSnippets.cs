@@ -101,9 +101,13 @@ namespace CSnippets
             //Exception.ExceptionExample.TestExceptionExample();
             //#endregion // Exception
 
-            #region Delegate
-            Delegate.DelegateExample.TestDelegateExample();
-            #endregion // Delegate
+            //#region Delegate
+            //Delegate.DelegateExample.TestDelegateExample();
+            //#endregion // Delegate
+
+            #region Lambda
+            Lambda.LambdaExample.TestLambdaExample();
+            #endregion // Lambda
 
             Console.ReadKey();
         }

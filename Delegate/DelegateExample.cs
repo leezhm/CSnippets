@@ -81,10 +81,12 @@ namespace CSnippets.Delegate
             {
                 temp += src[i];
             }
-
+            
             Console.WriteLine("Resulting string is " + temp + "\n");
             return temp;
         }
+
+        //public string ReplaceSpaceWith
     }
 
     class DelegateExample
