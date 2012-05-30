@@ -10,7 +10,7 @@
 // 		 leezhm <2012/4/9> 
 // 
 // Modified:
-// 	     leezhm <2012/5/29> 
+// 	     leezhm <2012/5/30> 
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -105,9 +105,13 @@ namespace CSnippets
             //Delegate.DelegateExample.TestDelegateExample();
             //#endregion // Delegate
 
-            #region Lambda
-            Lambda.LambdaExample.TestLambdaExample();
-            #endregion // Lambda
+            //#region Lambda
+            //Lambda.LambdaExample.TestLambdaExample();
+            //#endregion // Lambda
+
+            #region Event
+            Event.EventExample.TestEventExample();
+            #endregion // Event
 
             Console.ReadKey();
         }
