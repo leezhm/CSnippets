@@ -54,6 +54,52 @@ namespace CSnippets.Event
         }
     }
 
+    internal class HandleA
+    {
+        public void OnHandleA()
+        {
+            Console.WriteLine("Event had Handled by HandleA ...");
+        }
+    }
+
+    internal class HandleB
+    {
+        public void OnHandleB()
+        {
+            Console.WriteLine("Event had Handled by HandleB ...");
+        }
+    }
+
+    #region Standard Event Demo
+    internal class KeyEventArgs : EventArgs
+    {
+        public char Key
+        {
+            get;
+            private set;
+        }
+
+        public KeyEventArgs(char ch)
+        {
+            Key = ch;
+        }
+    }
+
+    internal class KeyEvent
+    {
+        public event EventHandler<KeyEventArgs> KeyPressed;
+
+        public void OnKeyPressedEventHandler(char key)
+        {
+            if (null != KeyPressed)
+            {
+                KeyEventArgs kea = new KeyEventArgs(key);
+                KeyPressed(this, kea);
+            }
+        }
+    }
+    #endregion // Standard Event Demo
+
     class EventExample
     {
         private static void OnTestEventHandler()
@@ -68,8 +114,46 @@ namespace CSnippets.Event
             // Add Handler() to the event list.
             te.ATestEvent += OnTestEventHandler;
 
+            HandleA ha = new HandleA();
+            HandleB hb = new HandleB();
+
+            // Add Handler() from HandleA and HandleB object
+            te.ATestEvent += ha.OnHandleA;
+            te.ATestEvent += hb.OnHandleB;
+
             // Raise the event.
             te.OnTestEvent();
+
+            // Remove Handler() from list
+            Console.WriteLine("\nRemove A Handler from event handler list ...");
+            te.ATestEvent -= OnTestEventHandler;
+            te.OnTestEvent();
+
+            // Standard Event 
+            Console.WriteLine("\n Standard Event ...");
+            KeyEvent ke = new KeyEvent();
+            ke.KeyPressed += (source, args) =>
+                {
+                    Console.WriteLine("Received Key Pressed : " + args.Key);
+                };
+
+            // Another handler
+            ke.KeyPressed += (source, args) =>
+                {
+                    Console.WriteLine("Received Key Pressed by another handler -> " + args.Key);
+                };
+
+            ConsoleKeyInfo cki;
+
+            do
+            {
+                cki = Console.ReadKey();
+
+                // Send KeyEvent
+                ke.OnKeyPressedEventHandler(cki.KeyChar);
+
+            } while (cki.KeyChar != '.');
+
         }
     }
 }
