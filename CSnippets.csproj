@@ -67,6 +67,7 @@
     <Compile Include="Array\ArrayQueue.cs" />
     <Compile Include="Classes\ConstructorAndDestructor.cs" />
     <Compile Include="DataType\DataType.cs" />
+    <Compile Include="Delegate\DelegateExample.cs" />
     <Compile Include="Exception\ExceptionExample.cs" />
     <Compile Include="GC\DisposeExample.cs" />
     <Compile Include="GC\FinalizeExample.cs" />
@@ -83,7 +84,7 @@
     <Compile Include="Directory\EnumerateDirectory.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Delegate\" />
+    <Folder Include="IO\" />
     <Folder Include="String\" />
     <Folder Include="Xml\" />
   </ItemGroup>

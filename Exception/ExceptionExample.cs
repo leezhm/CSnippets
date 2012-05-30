@@ -102,7 +102,7 @@ namespace CSnippets.Exception
             {
                 ThrowException();
             }
-            catch (IndexOutOfRangeException expt) // the loop will break when this exception was captured.
+            catch (IndexOutOfRangeException expt) // the loop will break when this exPception was captured.
             {
                 Console.WriteLine("Stack trace: " + expt.StackTrace);
                 Console.WriteLine("Message: " + expt.Message);

@@ -1,5 +1,4 @@
-﻿
-// 
+﻿// 
 // Program.cs
 //  
 // Author:
@@ -98,9 +97,13 @@ namespace CSnippets
             //Interfacce.InterfaceExample.TestInterfaceExample();
             //#endregion // Interface
 
-            #region Exception
-            Exception.ExceptionExample.TestExceptionExample();
-            #endregion // Exception
+            //#region Exception
+            //Exception.ExceptionExample.TestExceptionExample();
+            //#endregion // Exception
+
+            #region Delegate
+            Delegate.DelegateExample.TestDelegateExample();
+            #endregion // Delegate
 
             Console.ReadKey();
         }
