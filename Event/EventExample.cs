@@ -79,9 +79,16 @@ namespace CSnippets.Event
             private set;
         }
 
-        public KeyEventArgs(char ch)
+        public int Count
+        {
+            get;
+            private set;
+        }
+
+        public KeyEventArgs(char ch, int c)
         {
             Key = ch;
+            Count = c;
         }
     }
 
@@ -89,11 +96,13 @@ namespace CSnippets.Event
     {
         public event EventHandler<KeyEventArgs> KeyPressed;
 
+        private int Count = 0;
+
         public void OnKeyPressedEventHandler(char key)
         {
             if (null != KeyPressed)
             {
-                KeyEventArgs kea = new KeyEventArgs(key);
+                KeyEventArgs kea = new KeyEventArgs(key, ++ Count);
                 KeyPressed(this, kea);
             }
         }
@@ -134,7 +143,8 @@ namespace CSnippets.Event
             KeyEvent ke = new KeyEvent();
             ke.KeyPressed += (source, args) =>
                 {
-                    Console.WriteLine("Received Key Pressed : " + args.Key);
+                    Console.WriteLine("Received Key Pressed : {0}, and this is your {1}-th time to hit KeyBoard",
+                                       args.Key, args.Count);
                 };
 
             // Another handler
