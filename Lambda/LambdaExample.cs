@@ -43,6 +43,8 @@ namespace CSnippets.Lambda
 
     delegate bool IsEven(int operand);
 
+    delegate int CountInteger(int Max);
+
     class LambdaExample
     {
         public static void TestLambdaExample()
@@ -64,6 +66,19 @@ namespace CSnippets.Lambda
             {
                 if (ie(j)) Console.WriteLine(j + "\t is Even ...");
             }
+
+            // statement lambda
+            CountInteger ci = max =>
+                {
+                    int count = 0;
+                    for (int i = 0; i < max; ++i)
+                    {
+                        count += i;
+                    }
+                    return count;
+                };
+
+            Console.WriteLine("Count of 100 is {0}", ci(100));
         }
     }
 }
