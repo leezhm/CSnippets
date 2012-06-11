@@ -109,6 +109,9 @@ namespace CSnippets
             //Lambda.LambdaExample.TestLambdaExample();
             //#endregion // Lambda
 
+            #warning Just a error testing message
+            #line 45 "Event/EventExample.cs"
+
             #region Event
             Event.EventExample.TestEventExample();
             #endregion // Event

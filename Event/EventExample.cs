@@ -136,6 +136,7 @@ namespace CSnippets.Event
             // Remove Handler() from list
             Console.WriteLine("\nRemove A Handler from event handler list ...");
             te.ATestEvent -= OnTestEventHandler;
+            te.ATestEvent -= hb.OnHandleB;
             te.OnTestEvent();
 
             // Standard Event 
