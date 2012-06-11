@@ -80,6 +80,7 @@
     <Compile Include="OperatorOverload\OperatorExample.cs" />
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="RefAndOut\ArgumentWithRefAndOut.cs" />
+    <Compile Include="Reflection\ReflectionExample.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
     <Compile Include="CSnippets.cs" />

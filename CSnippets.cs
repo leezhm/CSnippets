@@ -121,6 +121,10 @@ namespace CSnippets
             Console.WriteLine("Full Name -> {0} and it is a class<{1}>", t.FullName, t.IsClass);
             #endregion // RTTI
 
+            #region Reflection
+            Reflection.ReflectionExample.TestReflectionExample();
+            #endregion // Reflection 
+
             Console.ReadKey();
         }
 	}
