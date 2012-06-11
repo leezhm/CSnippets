@@ -109,12 +109,17 @@ namespace CSnippets
             //Lambda.LambdaExample.TestLambdaExample();
             //#endregion // Lambda
 
-            #warning Just a error testing message
-            #line 45 "Event/EventExample.cs"
+            //#warning Just a error testing message
+            //#line 45 "Event/EventExample.cs"
 
-            #region Event
-            Event.EventExample.TestEventExample();
-            #endregion // Event
+            //#region Event
+            //Event.EventExample.TestEventExample();
+            //#endregion // Event
+
+            #region RTTI
+            Type t = typeof(ValueType);
+            Console.WriteLine("Full Name -> {0} and it is a class<{1}>", t.FullName, t.IsClass);
+            #endregion // RTTI
 
             Console.ReadKey();
         }
