@@ -10,7 +10,7 @@
 // 		 leezhm <2012/6/11> 
 // 
 // Modified:
-// 	     leezhm <2012/6/11> 
+// 	     leezhm <2012/6/12> 
 // 
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -144,6 +144,15 @@ namespace CSnippets.Reflection
 
             // Print the qualified assembly name.
             Console.WriteLine("Qualified assembly name: {0}.", objType.AssemblyQualifiedName.ToString());
+        }
+
+        public static void TestReflectionExample2()
+        {
+            string dir = System.Environment.CurrentDirectory;
+            // Load ReflectionTester
+            Assembly asm = Assembly.Load(".\\ReflectionTester.exe");
+
+            Console.WriteLine(asm.FullName);
         }
     }
 }

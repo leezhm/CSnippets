@@ -123,6 +123,7 @@ namespace CSnippets
 
             #region Reflection
             Reflection.ReflectionExample.TestReflectionExample();
+            Reflection.ReflectionExample.TestReflectionExample2();
             #endregion // Reflection 
 
             Console.ReadKey();
