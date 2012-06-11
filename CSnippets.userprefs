@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" ActiveRuntime="MS.NET" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OperatorOverload\OperatorExample.cs">
+    <Files>
+      <File FileName="Array\ArrayClass.cs" Line="67" Column="16" />
+      <File FileName="Array\ArrayQueue.cs" Line="45" Column="34" />
+      <File FileName="Threads\SimpleThreadPool.cs" Line="111" Column="5" />
+      <File FileName="Threads\AutoResetEventDemo.cs" Line="87" Column="8" />
+      <File FileName="CSnippets.cs" Line="62" Column="28" />
+      <File FileName="Queue\BasicQueue.cs" Line="94" Column="26" />
+      <File FileName="OperatorOverload\OperatorExample.cs" Line="43" Column="7" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

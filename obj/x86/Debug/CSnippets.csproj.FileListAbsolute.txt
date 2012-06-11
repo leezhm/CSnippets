@@ -1,0 +1,7 @@
+E:\Projects\LeeProjects\CSharp\CSnippets\bin\Debug\CSnippets.exe
+E:\Projects\LeeProjects\CSharp\CSnippets\bin\Debug\CSnippets.pdb
+E:\Projects\LeeProjects\CSharp\CSnippets\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Projects\LeeProjects\CSharp\CSnippets\obj\x86\Debug\CSnippets.exe
+E:\Projects\LeeProjects\CSharp\CSnippets\obj\x86\Debug\CSnippets.pdb
+E:\Projects\LeeProjects\CSharp\CSnippets\bin\Debug\App.config
+E:\Projects\LeeProjects\CSharp\CSnippets\bin\Debug\CSnippets.exe.config
