@@ -11,17 +11,15 @@ namespace ReflectionTester
 
     class ReflectionTester
     {
-        private int Width { get; set; }
-        private int Height { get; set; }
+        public int Width { get; set; }
+        public int Height { get; set; }
 
-        private int Area
+        public int Area
         {
             get
             {
                 return Width * Height;
             }
-
-            private set;
         }
 
         public ReflectionTester(int w, int h)
@@ -59,7 +57,17 @@ namespace ReflectionTester
 
     class Reflector
     {
+        public string Msg { get; private set; }
 
+        public Reflector(string str)
+        {
+            Msg = str;
+        }
+
+        public void Show()
+        {
+            Console.WriteLine("Current Message : {0}", Msg);
+        }
     }
 
 
@@ -67,6 +75,7 @@ namespace ReflectionTester
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("");
         }
     }
 }
