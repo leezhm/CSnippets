@@ -150,7 +150,7 @@ namespace CSnippets.Reflection
         {
             string dir = System.Environment.CurrentDirectory;
             // Load ReflectionTester
-            Assembly asm = Assembly.Load(".\\ReflectionTester.exe");
+            Assembly asm = Assembly.Load(dir + "\\ReflectionTester.exe");
 
             Console.WriteLine(asm.FullName);
         }

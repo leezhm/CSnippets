@@ -70,7 +70,6 @@ namespace ReflectionTester
         }
     }
 
-
     class ReflectionDemo
     {
         static void Main(string[] args)
