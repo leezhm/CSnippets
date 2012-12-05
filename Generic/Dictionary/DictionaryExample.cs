@@ -64,12 +64,17 @@ namespace CSnippets.Generic.Dictionary
                                                            select entry;
             dict = sort.ToDictionary(pair => pair.Key, pair => pair.Value);
 
+            int k = 8;
+
             Console.WriteLine("{0, -4} {1, -16}", "Key", "Value");
             foreach (var item in dict)
             {
                 Console.WriteLine("{0, -4} {1, -16}", item.Key, item.Value);
             }
             Console.WriteLine("\n\n");
+
+            al.RemoveAt(0);
+            al.Insert(0, dict);
 
             Console.WriteLine("{0, -4} {1, -16} -----ArrayList", "Key", "Value");
             foreach (var item in (Dictionary<uint, double>)al[0])
