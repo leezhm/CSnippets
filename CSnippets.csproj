@@ -74,6 +74,7 @@
     <Compile Include="GC\DisposeExample.cs" />
     <Compile Include="GC\FinalizeExample.cs" />
     <Compile Include="GC\UsingStatement.cs" />
+    <Compile Include="Generic\Dictionary\DictionaryExample.cs" />
     <Compile Include="IndexerAndProperty\IndexerExample.cs" />
     <Compile Include="Interfacce\InterfaceExample.cs" />
     <Compile Include="Lambda\LambdaExample.cs" />

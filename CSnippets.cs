@@ -116,15 +116,20 @@ namespace CSnippets
             //Event.EventExample.TestEventExample();
             //#endregion // Event
 
-            #region RTTI
-            Type t = typeof(ValueType);
-            Console.WriteLine("Full Name -> {0} and it is a class<{1}>", t.FullName, t.IsClass);
-            #endregion // RTTI
+            //#region RTTI
+            //Type t = typeof(ValueType);
+            //Console.WriteLine("Full Name -> {0} and it is a class<{1}>", t.FullName, t.IsClass);
+            //#endregion // RTTI
 
-            #region Reflection
-            Reflection.ReflectionExample.TestReflectionExample();
-            Reflection.ReflectionExample.TestReflectionExample2();
-            #endregion // Reflection 
+            //#region Reflection
+            //Reflection.ReflectionExample.TestReflectionExample();
+            //Reflection.ReflectionExample.TestReflectionExample2();
+            //#endregion // Reflection 
+
+            #region Generic.Dictionary
+            Generic.Dictionary.DictionaryExample.TestDictionaryExample();
+            Generic.Dictionary.DictionaryExample.TestDictionaryExample1();
+            #endregion // Generic.Dictionary
 
             Console.ReadKey();
         }
