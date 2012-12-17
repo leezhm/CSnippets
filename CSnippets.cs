@@ -129,6 +129,7 @@ namespace CSnippets
             #region Generic.Dictionary
             Generic.Dictionary.DictionaryExample.TestDictionaryExample();
             Generic.Dictionary.DictionaryExample.TestDictionaryExample1();
+            Generic.Dictionary.DictionaryExample.TestDictionaryExample2();
             #endregion // Generic.Dictionary
 
             Console.ReadKey();

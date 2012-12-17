@@ -102,5 +102,62 @@ namespace CSnippets.Generic.Dictionary
             }
             Console.WriteLine("\n\n");
         }
+
+        #region Test Reference in Dict
+        public class Point
+        {
+            public float X { get; private set; }
+            public float Y { get; private set; }
+
+            public Point(float x, float y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
+
+            public override string ToString()
+            {
+                return "(" + this.X + ", " + this.Y + ")" ;
+            }
+        }
+
+        public static void TestDictionaryExample2()
+        {
+            Dictionary<int, Point> dictPoint = new Dictionary<int, Point>();
+
+            for (int i = 0; i < 10; ++i)
+            {
+                dictPoint.Add(i, new Point((float)i * i, (float)i + i));
+            }
+
+            Console.WriteLine("TestDictionaryExample2 ----- ");
+            foreach (var item in dictPoint)
+	        {
+		        Console.WriteLine(item.ToString());
+	        }
+
+            // update
+            Point p = new Point(1000.0f, 1000.0f);
+            dictPoint[3] = p;
+
+            try
+            {
+                dictPoint[300] = p;
+            }
+            catch (System.Collections.Generic.KeyNotFoundException expt)
+            {
+                Console.WriteLine(expt.ToString());
+            }
+
+            dictPoint.Remove(7);
+            dictPoint.Remove(100);
+
+            Console.WriteLine("\n ----Update ----- ");
+            foreach (var item in dictPoint)
+            {
+                Console.WriteLine(item.ToString());
+            }
+        }
+        #endregion // Test Reference in Dict
     }
 }
