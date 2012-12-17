@@ -82,6 +82,12 @@
     <Compile Include="Queue\BasicQueue.cs" />
     <Compile Include="RefAndOut\ArgumentWithRefAndOut.cs" />
     <Compile Include="Reflection\ReflectionExample.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\Cell.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\CellConsumer.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\CellExample.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\CellProducer.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\FirstSimpleThread.cs" />
+    <Compile Include="Threads\ConsoleThreadSerials\TenThreads.cs" />
     <Compile Include="Threads\SimpleThreadPool.cs" />
     <Compile Include="Threads\AutoResetEventDemo.cs" />
     <Compile Include="CSnippets.cs" />

@@ -39,7 +39,7 @@ namespace CSnippets
 	{
 		public static void Main()
 		{
-            //#region Array
+            #region Array
             //// ArrayClass
             //ArrayClass.ArrayClass.RunArrayClass();
             //Console.WriteLine();
@@ -48,88 +48,96 @@ namespace CSnippets
             //ArrayQueue.ArrayQueue aq = new ArrayQueue.ArrayQueue();
             //aq.RunArrayQueue();
             //Console.WriteLine();
-            //#endregion // Array
+            #endregion // Array
 		
-            //#region Threads
+            #region Threads
             //SimpleThreadPool.SimpleThreadPool.RunSimpleThreadPool();
             //Console.WriteLine();
-			
-			
+
             //AutoResetEventDemo.AutoResetEventDemo.RunAutoResetEventDemo();
-            //#endregion // Threads
-			
-            //#region Queue
+
+            #region Threads.ConsoleThreadSerials
+            //Threads.ConsoleThreadSerials.FirstSimpleThread.FirstSimpleThreadExample();
+
+            //Threads.ConsoleThreadSerials.TenThreads.TenThreadsExample();
+
+            Threads.ConsoleThreadSerials.CellExample.CellExampleExample();
+            #endregion // Threads.ConsoleThreadSerials
+
+            #endregion // Threads
+
+            #region Queue
             //BasicQueue.BasicQueue.RunBasicQueue();
             //ShareQueueInThread.ShareQueueInThread.RunShareQueueInThread();
-            //#endregion // Queue
+            #endregion // Queue
 			
-            //#region Directory
+            #region Directory
             //EnumerateDirectory.EnumerateDirectory.ShowCurrentDirectory();
-            //#endregion // Directory
+            #endregion // Directory
 
-            //#region DataType
+            #region DataType
             //DataType.DataType.SizeofType();
-            //#endregion // DataType
+            #endregion // DataType
 
-            //#region Classes
+            #region Classes
             //Classes.ConstructorAndDestructor.TestIt();
-            //#endregion // Classes
+            #endregion // Classes
 
-            //#region GC
+            #region GC
             //GC.DisposeExample.TestDispose();
             //GC.UsingStatement.TestUsingStatement();
             //GC.FinalizeExample.TestFinalizeExample();
-            //#endregion // GC
+            #endregion // GC
 
-            //#region Ref and Out
+            #region Ref and Out
             //RefAndOut.ArgumentWithRefAndOut.TestArgumentWithRefAndOut();
-            //#endregion // Ref and Out
+            #endregion // Ref and Out
 
-            //#region Operator Overloading
+            #region Operator Overloading
             //OperatorOverload.OperatorExample.TestOperatorExample();
-            //#endregion // Operator Overloading
+            #endregion // Operator Overloading
 
-            //#region Indexer and Property
+            #region Indexer and Property
             //IndexerAndProperty.IndexerExample.TestIndexerExample();
-            //#endregion // Indexer and Property
+            #endregion // Indexer and Property
 
-            //#region Interface
+            #region Interface
             //Interfacce.InterfaceExample.TestInterfaceExample();
-            //#endregion // Interface
+            #endregion // Interface
 
-            //#region Exception
+            #region Exception
             //Exception.ExceptionExample.TestExceptionExample();
-            //#endregion // Exception
+            #endregion // Exception
 
-            //#region Delegate
+            #region Delegate
             //Delegate.DelegateExample.TestDelegateExample();
-            //#endregion // Delegate
+            #endregion // Delegate
 
-            //#region Lambda
+            #region Lambda
             //Lambda.LambdaExample.TestLambdaExample();
-            //#endregion // Lambda
+            #endregion // Lambda
 
             //#warning Just a error testing message
             //#line 45 "Event/EventExample.cs"
 
-            //#region Event
+            #region Event
             //Event.EventExample.TestEventExample();
-            //#endregion // Event
+            #endregion // Event
 
-            //#region RTTI
+            #region RTTI
             //Type t = typeof(ValueType);
             //Console.WriteLine("Full Name -> {0} and it is a class<{1}>", t.FullName, t.IsClass);
-            //#endregion // RTTI
+            #endregion // RTTI
 
-            //#region Reflection
+            #region Reflection
             //Reflection.ReflectionExample.TestReflectionExample();
             //Reflection.ReflectionExample.TestReflectionExample2();
-            //#endregion // Reflection 
+            #endregion // Reflection 
 
             #region Generic.Dictionary
-            Generic.Dictionary.DictionaryExample.TestDictionaryExample();
-            Generic.Dictionary.DictionaryExample.TestDictionaryExample1();
-            Generic.Dictionary.DictionaryExample.TestDictionaryExample2();
+            //Generic.Dictionary.DictionaryExample.TestDictionaryExample();
+            //Generic.Dictionary.DictionaryExample.TestDictionaryExample1();
+            //Generic.Dictionary.DictionaryExample.TestDictionaryExample2();
             #endregion // Generic.Dictionary
 
             Console.ReadKey();
